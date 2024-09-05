@@ -7,7 +7,7 @@ bsa7b.o: bsa7b.s
 	as -g bsa7b.s -o bsa7b.o
 
 .PHONY: clean
-:clean
+clean:
 	rm *.o
 	rm Build/DEBUG/*
 
