@@ -14,7 +14,7 @@ _write:
 
     MOV R7, #4                      @ write syscall number
     MOV R0, #1                      @ stdout is the screen
-    MOV R2, #21                     @ string is 21 chars long
+    MOV R2, #14                     @ string is 14 chars long
     LDR R1,=string                  @ string is located at string:
     SWI 0
 
@@ -26,5 +26,5 @@ _exit:
 .data
 
 string:
-.ascii "Hello, World! String\n"
+.ascii "Hello, World!\n"
 
